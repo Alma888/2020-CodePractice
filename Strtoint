@@ -1,0 +1,17 @@
+# 2020-CodePractice
+
+public class Strtoint {
+    public static void main(String[] args) {
+        String s="168";
+        int tmp;
+        long num=0;
+        char[] str=s.toCharArray();
+        for(int i=0;i<str.length;i++){
+            if(str[i]>='0'&&str[i]<='9'){
+                tmp=str[i]-'0';
+                num=num*10+tmp;
+            }
+        }
+        System.out.println(num);
+    }
+}
